@@ -87,7 +87,7 @@ As subnets privadas utilizam blocos `/20` (~4.096 IPs cada) porque concentram os
 | Pública | Internet | Internet Gateway |
 | Privada | Internet | Internet Gateway |
 | Database | Sem saída direta | — |
-| Public Pods | — | Associada conforme necessidade |
+| Priv Pods | — | Associada conforme necessidade |
 
 Os **NAT Gateways** são criados (um por AZ) para uso futuro, permitindo que recursos privados acessem a internet sem exposição direta, sem necessidade de recriar a infraestrutura.
 
