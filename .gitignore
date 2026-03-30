@@ -1,0 +1,27 @@
+# Estado do Terraform — contém toda a infra em plaintext, incluindo senhas
+*.tfstate
+*.tfstate.backup
+
+# Cache local de providers e módulos — cada dev baixa o seu
+.terraform/
+.terraform.lock.hcl
+
+# Arquivos de variáveis com valores reais — podem conter dados sensíveis
+# Crie versões .example destes arquivos para servir de template
+enviroment/**/backend.tfvars
+enviroment/**/terraform.tfvars
+
+# Arquivos de override locais
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Crash logs gerados pelo Terraform
+crash.log
+crash.*.log
+
+# Chaves e certificados
+*.pem
+*.key
+*.p12
